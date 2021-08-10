@@ -1,0 +1,36 @@
+<!-- <html>
+    <head>
+        <title>
+            Navgurukul
+        </title>
+    </head>
+    <body>
+        <h1>Navgurukul</h1>
+        <h2>Name</h2>
+        <p>My name is <b>Pranjali</b>.I'm from <u>U.P(Azamgarh)</u>.I'm a <b><i>Girl Icon</i></b>.My father name is <mark>Mr.Sunil Singh</mark>.</p>
+        <hr>_</hr>
+       <h1><marquee>Don't run in full days please do your work on time</marquee></h1>
+
+       <ol style="list-style: lower-alpha;">
+          <h3><li>python</li>
+           <li>js</li>
+           <li>react js</li></h3>
+       </ol>
+    </body>
+</html></h1> -->
+
+
+batch1_students = ["Shivam", "Rahul", "Kavay", "Dhannu", "Deepanshu", "Nitin", "Manoj", "Shakrudin", "Tara", "Suraj", "Krishna"]
+students_file = open("navgurukul_students.html", "w")
+students_file.write("<html>\n")
+students_file.write("<head>\n")
+students_file.write("<title>NavGurukul Students</title>\n")
+students_file.write("</head>\n")
+students_file.write("<body>\n")
+students_file.write("<ul>")
+for student in batch1_students:
+    students_file.write("<li>" + student + "</li>\n")
+students_file.write("</ul>\n")
+students_file.write("</body>\n")
+students_file.write("</html>\n")
+students_file.close() 
